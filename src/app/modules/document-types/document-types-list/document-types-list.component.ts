@@ -29,10 +29,12 @@ export class DocumentTypesListComponent implements OnInit {
     this.loading = true;
     this.documentTypeService.getAll().subscribe({
       next: (data) => {
-        this.documentTypes = data;
+        this.documentTypes = Array.isArray(data) ? data : [];
         this.loading = false;
       },
       error: (error) => {
+        console.error('Error loading document types:', error);
+        this.documentTypes = []; // Ensure it's always an array
         this.messageService.add({
           severity: 'error',
           summary: 'Error',

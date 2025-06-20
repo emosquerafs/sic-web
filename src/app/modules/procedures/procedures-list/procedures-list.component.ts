@@ -41,10 +41,11 @@ export class ProceduresListComponent implements OnInit {
     this.loading = true;
     this.procedureService.getAll().subscribe({
       next: (data) => {
-        this.procedures = data;
+        this.procedures = Array.isArray(data) ? data : [];
         this.loading = false;
       },
       error: (error) => {
+        this.procedures = []; // Ensure it's always an array
         this.messageService.add({
           severity: 'error',
           summary: 'Error',
@@ -58,9 +59,10 @@ export class ProceduresListComponent implements OnInit {
   loadPersons(): void {
     this.personService.getAll().subscribe({
       next: (data) => {
-        this.persons = data;
+        this.persons = Array.isArray(data) ? data : [];
       },
       error: (error) => {
+        this.persons = []; // Ensure it's always an array
         this.messageService.add({
           severity: 'error',
           summary: 'Error',

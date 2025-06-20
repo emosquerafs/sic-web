@@ -7,6 +7,6 @@ export const environment = {
   },
   checkLoginInterval: 300,
   hostName: 'http://localhost:4200',
-  api_gateway: 'http://localhost:8081/api/sic'
+  api_gateway: '/api/sic'
   
 };

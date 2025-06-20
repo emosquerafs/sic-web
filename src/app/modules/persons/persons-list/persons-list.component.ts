@@ -42,10 +42,11 @@ export class PersonsListComponent implements OnInit {
     this.loading = true;
     this.personService.getAll().subscribe({
       next: (data) => {
-        this.persons = data;
+        this.persons = Array.isArray(data) ? data : [];
         this.loading = false;
       },
       error: (error) => {
+        this.persons = []; // Ensure it's always an array
         this.messageService.add({
           severity: 'error',
           summary: 'Error',
@@ -59,9 +60,10 @@ export class PersonsListComponent implements OnInit {
   loadDocumentTypes(): void {
     this.documentTypeService.getAll().subscribe({
       next: (data) => {
-        this.documentTypes = data;
+        this.documentTypes = Array.isArray(data) ? data : [];
       },
       error: (error) => {
+        this.documentTypes = []; // Ensure it's always an array
         this.messageService.add({
           severity: 'error',
           summary: 'Error',

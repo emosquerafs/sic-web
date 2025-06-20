@@ -38,10 +38,11 @@ export class EmployeesListComponent implements OnInit {
     this.loading = true;
     this.employeeService.getAll().subscribe({
       next: (data) => {
-        this.employees = data;
+        this.employees = Array.isArray(data) ? data : [];
         this.loading = false;
       },
       error: (error) => {
+        this.employees = []; // Ensure it's always an array
         this.messageService.add({
           severity: 'error',
           summary: 'Error',
@@ -55,9 +56,10 @@ export class EmployeesListComponent implements OnInit {
   loadPersons(): void {
     this.personService.getAll().subscribe({
       next: (data) => {
-        this.persons = data;
+        this.persons = Array.isArray(data) ? data : [];
       },
       error: (error) => {
+        this.persons = []; // Ensure it's always an array
         this.messageService.add({
           severity: 'error',
           summary: 'Error',
