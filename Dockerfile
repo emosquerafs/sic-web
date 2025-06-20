@@ -6,9 +6,8 @@ COPY angular.json /app/
 COPY package-lock.json /app/
 RUN npm ci
 COPY ./ /app/
-ARG ENVIRONMENT
-ENV ENVIRONMENT=$ENVIRONMENT
-RUN npm run build:${ENVIRONMENT}
+ENV ENVIRONMENT=dev
+RUN npm run build:dev
 
 # Include Nginx
 FROM nginx:latest
