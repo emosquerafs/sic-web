@@ -7,60 +7,12 @@
     "logOut": "Log Out"
   },
   "menu": {
-    "staticData": {
-      "title": "Static Data",
-      "locations": {
-        "title": "Locations",
-        "country": "Country",
-        "states": "State",
-        "city": "City"
-      },
-      "commonData": {
-        "title": "Common Data",
-        "level": "Level",
-        "documentType": "Document Type",
-        "regiemnt": "Regimen",
-        "productGroup": "Product Group",
-        "productSubgroup": "Product Subgroup",
-        "productType": "Product Type",
-        "measure": "Measure",
-        "unitMeasurement": "Unit of Measurement"
-      }
-    },
-    "businessOrganization": {
-      "title": "Business Organization",
-      "billingSubmission": {
-        "title": "Billing Submission",
-        "billingSubmission": "Billing Management"
-      },
-      "healthcareProviders": {
-        "title": "Healthcare Providers (EPS)",
-        "epsRegistration": "EPS Registration",
-        "patient": "Patient"
-      },
-      "product": {
-        "title": "Product",
-        "inventory": "Inventory",
-        "newProducts": "New Products"
-      },
-      "purchases": {
-        "title": "Purchases",
-        "purchaseRequests": "Purchase Requests",
-        "purchaseOrders": "Purchase Orders",
-        "purchaseHistory": "Purchase History"
-      },
-      "deliveryAndMedicationTracking": {
-        "title": "Delivery and Medication Tracking",
-        "medicationDeliveryRequests": "Medication Delivery Requests",
-        "deliveryStatus": "Delivery Status",
-        "deliveryHistory": "Delivery History",
-        "partialPrescriptionTracking": "Partial Prescription Tracking",
-        "deliveryPersonnelManagement": "Delivery Personnel Management"
-      },
-      "suppliers": {
-        "title": "Suppliers",
-        "supplierRegistration": "Supplier Registration"
-      }
+    "management": {
+      "title": "Management",
+      "documentTypes": "Document Types",
+      "persons": "Persons",
+      "employees": "Employees",
+      "procedures": "Procedures"
     }
   }
 }

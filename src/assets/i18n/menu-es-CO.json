@@ -7,60 +7,12 @@
     "logOut": "Cerrar sesión"
   },
   "menu": {
-    "staticData": {
-      "title": "Datos Estáticos",
-      "locations": {
-        "title": "Ubicaciones",
-        "country": "País",
-        "states": "Departamento",
-        "city": "Ciudad"
-      },
-      "commonData": {
-        "title": "Datos Comunes",
-        "level": "Nivel",
-        "documentType": "Tipo de Documento",
-        "regiemnt": "Regimen",
-        "productGroup": "Grupo de Producto",
-        "productSubgroup": "Subgrupo de Producto",
-        "productType": "Tipo de Producto",
-        "measure": "Unidad",
-        "unitMeasurement": "Unidad de Medida"
-      }
-    },
-    "businessOrganization": {
-      "title": "Organización Empresarial",
-      "billingSubmission": {
-        "title": "Facturación",
-        "billingSubmission": "Gestión de Facturación"
-      },
-      "healthcareProviders": {
-        "title": "Proveedores de Salud (EPS)",
-        "epsRegistration": "Registro de EPS",
-        "patient": "Paciente"
-      },
-      "product": {
-        "title": "Producto",
-        "inventory": "Inventario",
-        "newProducts": "Nuevos Productos"
-      },
-      "purchases": {
-        "title": "Compras",
-        "purchaseRequests": "Solicitudes de Compra",
-        "purchaseOrders": "Órdenes de Compra",
-        "purchaseHistory": "Historial de Compras"
-      },
-      "deliveryAndMedicationTracking": {
-        "title": "Seguimiento de Entregas y Medicamentos",
-        "medicationDeliveryRequests": "Solicitudes de Entrega de Medicamentos",
-        "deliveryStatus": "Estado de la Entrega",
-        "deliveryHistory": "Historial de Entregas",
-        "partialPrescriptionTracking": "Seguimiento de Prescripción Parcial",
-        "deliveryPersonnelManagement": "Gestión de Personal de Entrega"
-      },
-      "suppliers": {
-        "title": "Proveedores",
-        "supplierRegistration": "Registro de Proveedores"
-      }
+    "management": {
+      "title": "Gestión",
+      "documentTypes": "Tipos de Documento",
+      "persons": "Personas",
+      "employees": "Empleados",
+      "procedures": "Procedimientos"
     }
   }
 }

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MessageService } from 'primeng/api';
 
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout/layout.component';
@@ -26,6 +27,7 @@ import { PrimeAllModule } from '../../common/prime-all.module';
     MenuComponent,
     MenuItemComponent
   ],
-  imports: [CommonModule, LayoutRoutingModule, PoseidonCommonModule, PrimeAllModule]
+  imports: [CommonModule, LayoutRoutingModule, PoseidonCommonModule, PrimeAllModule],
+  providers: [MessageService]
 })
 export class LayoutModule {}
